@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded PDF</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #pdf-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        embed {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (max-width: 767px) {
+            /* For screens narrower than 768px (typically mobile devices) */
+            #pdf-container {
+                height: 50vh; /* Set the height to 50% of the viewport height */
+            }
+
+            embed {
+                height: 100%; /* Let the embed tag fill the 50% height */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="pdf-container">
+        <embed src="images\Modi-Ki-Guarantee-Sankalp-Patra-English_2.pdf" type="application/pdf" />
+    </div>
+</body>
+</html>
